@@ -1,9 +1,11 @@
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo general */
 html,
 body {
     height: 100%;
@@ -15,19 +17,20 @@ body {
     flex-direction: column;
 }
 
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+}
+
 #logo {
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #logo:hover {
     transform: scale(1.2);
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
 }
 
 .nav-link {
@@ -41,9 +44,11 @@ header {
     transform: scale(1.1);
 }
 
+/* Contenido principal */
 main {
-    flex: 1;
+    background-color: #f4e5cc;
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
 }
@@ -54,6 +59,7 @@ main {
 
 }
 
+/* Catalogo */
 .catalogo {
     width: 100%;
     max-width: 1200px;
@@ -107,6 +113,7 @@ main {
     background-color: #0056b3;
 }
 
+/* Preguntas frecuentes */
 .faq{
     max-width: 800px;
     margin: 30px auto;
@@ -134,7 +141,6 @@ main {
     font-size: 1.1rem;
     color: #007bff;
     margin-bottom: 10px;
-    cursor: pointer;
 }
 
 .question p{
@@ -148,10 +154,7 @@ main {
     text-decoration: none;
 }
 
-.question:hover{
-    background-color: #e8f4ff;
-}
-
+/* Formulario de registro */
 #register p a{
     color: #007bff;
     text-decoration: none;
@@ -196,8 +199,10 @@ input[type="password"] {
     background-color: #004a99;
 }
 
+/* Footer */
 
-footer {
+footer{
+    background-color: #333;
     color: #ffffff;
 }
 
