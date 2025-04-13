@@ -1,10 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -14,28 +15,28 @@ body {
     flex-direction: column;
 }
 
-#logo{
+#logo {
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#logo:hover{
+#logo:hover {
     transform: scale(1.2);
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
 }
 
-.nav-link{
+.nav-link {
     color: #4da6ff;
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #ffffff;
     transform: scale(1.1);
 }
@@ -47,21 +48,65 @@ main {
     align-items: center;
 }
 
-.titulo{
+.titulo {
+    text-align: center;
     margin-top: 2rem;
+
 }
 
-footer{
+.form-registro {
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.registro {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registro:hover{
+    background-color: #004a99;
+}
+
+
+footer {
     color: #ffffff;
 }
 
-footer a{
+footer a {
     color: #4da6ff;
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s ease;
 }
-footer a:hover{
+
+footer a:hover {
     color: #ffffff;
     transform: scale(1.1);
 }

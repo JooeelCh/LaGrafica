@@ -82,30 +82,23 @@
 
     <main>
 
-        <h1 class="titulo">Lo Nuevo</h1>
-        <div id="carouselExampleAutoplaying" class="carousel slide mt-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        <div class="form-registro">
+            <h1 class="titulo">Registro</h1>
+            <form>
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" required>
+        
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" required>
+        
+              <label for="password">Contraseña</label>
+              <input type="password" id="password" required>
+        
+              <label for="confirmPassword">Confirmar contraseña</label>
+              <input type="password" id="confirmPassword" required>
+        
+              <button class="registro" type="submit">Registrarse</button>
+            </form>
 
     </main>
 
