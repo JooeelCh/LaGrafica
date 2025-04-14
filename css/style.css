@@ -1,5 +1,5 @@
 /* Reset de estilos */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,45 +7,45 @@
 
 /* Estilo general */
 html,
-body {
+body{
     height: 100%;
     margin: 0;
 }
 
-body {
+body{
     display: flex;
     flex-direction: column;
 }
 
 /* Header */
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
 }
 
-#logo {
+#logo{
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-#logo:hover {
+#logo:hover{
     transform: scale(1.2);
 }
 
-.nav-link {
+.nav-link{
     color: #4da6ff;
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover{
     color: #ffffff;
     transform: scale(1.1);
 }
 
 /* Contenido principal */
-main {
+main{
     background-color: #f4e5cc;
     padding-bottom: 2rem;
     display: flex;
@@ -56,13 +56,13 @@ main {
     padding: 20px;
 }
 
-.titulo {
+.titulo{
     text-align: center;
     margin-top: 2rem;
 }
 
 /* Catalogo */
-.catalogo {
+.catalogo{
     width: 100%;
     max-width: 1200px;
     display: grid;
@@ -71,7 +71,7 @@ main {
     padding: 2rem;
 }
 
-.producto {
+.producto{
     background: white;
     padding: 1rem;
     border-radius: 10px;
@@ -85,29 +85,29 @@ main {
     height: 100%;
 }
 
-.producto:hover {
+.producto:hover{
     transform: scale(1.03);
 }
 
-.producto img {
+.producto img{
     max-height: 180px;
     object-fit: contain;
     margin-bottom: 1rem;
     flex-shrink: 0;
 }
 
-.producto h2 {
+.producto h2{
     font-size: 1.2rem;
     margin: 0.5rem 0;
 }
 
-.producto p {
+.producto p{
     font-size: 1rem;
     color: #333;
     margin-bottom: 0.5rem;
 }
 
-.producto button {
+.producto button{
     margin-top: auto;
     padding: 0.5rem 1rem;
     background-color: #007bff;
@@ -118,7 +118,7 @@ main {
     transition: background-color 0.2s ease;
 }
 
-.producto button:hover {
+.producto button:hover{
     background-color: #0056b3;
 }
 
@@ -174,11 +174,11 @@ main {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form_item {
+.form_item{
     margin-bottom: 15px;
 }
 
-.form_item label {
+.form_item label{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
@@ -187,7 +187,7 @@ main {
 
 .form_item input,
 .form_item textarea,
-.form_item select {
+.form_item select{
     width: 100%;
     padding: 10px;
     font-size: 16px;
@@ -196,11 +196,11 @@ main {
     background-color: white;
 }
 
-.form_item textarea {
+.form_item textarea{
     resize: vertical;
 }
 
-.submit-btn {
+.submit-btn{
     width: 100%;
     padding: 12px;
     font-size: 16px;
@@ -212,7 +212,7 @@ main {
     transition: background-color 0.3s;
 }
 
-.submit-btn:hover {
+.submit-btn:hover{
     background-color: #0056b3;
 }
 
@@ -222,14 +222,15 @@ main {
     text-decoration: none;
 }
 
-.form-registro {
-    max-width: 400px;
+.form-registro{
+    max-width: 600px;
+    padding: 30px 40px;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+label{
     margin-top: 15px;
     margin-bottom: 5px;
     font-weight: bold;
@@ -237,7 +238,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"]{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -245,7 +246,7 @@ input[type="password"] {
     border-radius: 6px;
 }
 
-.registro {
+.registro{
     width: 100%;
     padding: 10px;
     background-color: #0066cc;
@@ -257,7 +258,7 @@ input[type="password"] {
     transition: background-color 0.3s ease;
 }
 
-.registro:hover {
+.registro:hover{
     background-color: #004a99;
 }
 
@@ -268,68 +269,68 @@ footer{
     color: #ffffff;
 }
 
-footer a {
+footer a{
     color: #4da6ff;
     text-decoration: none;
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
-footer a:hover {
+footer a:hover{
     color: #ffffff;
     transform: scale(1.1);
 }
 
 /* Query para tablet (768px a 1024px) */
-@media (max-width: 1024px) {
-    .logo {
+@media (max-width: 1024px){
+    .logo{
         height: 70px;
     }
 
-    h1.titulo {
+    h1.titulo{
         font-size: 2rem;
         text-align: center;
     }
 
-    .navbar-nav .nav-link {
+    .navbar-nav .nav-link{
         font-size: 1rem;
         padding: 8px 12px;
     }
 }
 
 /* Query para celular (hasta 768px) */
-@media (max-width: 768px) {
-    .logo {
+@media (max-width: 768px){
+    .logo{
         height: 60px;
     }
 
-    h1.titulo {
+    h1.titulo{
         font-size: 1.5rem;
         margin-top: 1rem;
         text-align: center;
     }
 
-    .navbar-nav {
+    .navbar-nav{
         flex-direction: column;
         align-items: center;
     }
 
-    .navbar-nav .nav-link {
+    .navbar-nav .nav-link{
         font-size: 1rem;
         padding: 10px;
     }
 
-    .btn {
+    .btn{
         font-size: 0.9rem;
         padding: 8px 16px;
     }
 
     footer p,
-    footer a {
+    footer a{
         font-size: 0.9rem;
     }
 
-    footer a {
+    footer a{
         display: inline-block;
         margin: 0 5px;
     }

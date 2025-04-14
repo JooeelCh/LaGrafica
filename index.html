@@ -7,25 +7,30 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
     <title>La Grafica</title>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
 
+        <!-- Logo -->
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img  id="logo" class="logo d-inline-block align-text-top" src="img/Logo.png" alt="Logo" height="90">
+                <img id="logo" class="logo d-inline-block align-text-top" src="img/logo.png" alt="Logo" height="90">
             </a>
         </div>
 
+        <!-- Botón de inicio de sesión -->
         <div class="d-flex justify-content-center my-3">
             <button class="btn btn-primary text-nowrap btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
                 Iniciar Sesión
             </button>
         </div>
 
+        <!-- Modal de inicio de sesión -->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -49,13 +54,14 @@
                         </form>
 
                         <div id="register" class="text-center">
-                            <p class="mb-0">¿No tenés una cuenta? <a href="registro.html">Registrate acá</a></p>
+                            <p class="mb-0">¿No tenés una cuenta? <a href="pages/registro.html">Registrate acá</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -80,9 +86,12 @@
 
     </header>
 
+    <!-- Contenido Principal -->
     <main>
 
         <h1 class="titulo">Lo Nuevo</h1>
+
+        <!-- Carrusel -->
         <div id="carouselExampleAutoplaying" class="carousel slide mt-4 mb-4" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -109,12 +118,16 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
 
+        <!-- Copy & links -->
         <div class="container-fluid bg-dark text-center py-3">
             <p>&copy; 2025 La Grafica. Todos los derechos reservados.</p>
-            <a href="https://api.whatsapp.com/send/?phone=542216837843&text&type=phone_number&app_absent=0" target="_blank">Whatsapp</a> | <a href="mailto:impresiones@lagraficaensenada.com">Correo</a>
+            <a href="https://api.whatsapp.com/send/?phone=542216837843&text&type=phone_number&app_absent=0"
+                target="_blank">Whatsapp</a> | <a href="mailto:impresiones@lagraficaensenada.com">Correo</a>
         </div>
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"

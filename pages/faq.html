@@ -6,26 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
     <title>Preguntas Frecuentes</title>
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
 
+        <!-- Logo -->
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">
-                <img  id="logo" class="logo d-inline-block align-text-top" src="/img/Logo.png" alt="Logo" height="90">
+            <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="logo d-inline-block align-text-top" src="../img/logo.png" alt="Logo" height="90">
             </a>
         </div>
 
+        <!-- Botón de inicio de sesión -->
         <div class="d-flex justify-content-center my-3">
             <button class="btn btn-primary text-nowrap btn-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
                 Iniciar Sesión
             </button>
         </div>
 
+        <!-- Modal de inicio de sesión -->
         <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -49,13 +54,14 @@
                         </form>
 
                         <div id="register" class="text-center">
-                            <p class="mb-0">¿No tenés una cuenta? <a href="/pages/registro.html">Registrate acá</a></p>
+                            <p class="mb-0">¿No tenés una cuenta? <a href="./registro.html">Registrate acá</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -65,13 +71,13 @@
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/productos.html">Productos</a>
+                            <a class="nav-link" href="./productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/faq.html">FAQ</a>
+                            <a class="nav-link" href="./faq.html">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -80,61 +86,77 @@
 
     </header>
 
+    <!-- Contenido Principal -->
     <main>
 
         <h1 class="titulo">Preguntas Frecuentes</h1>
 
+        <!-- Preguntas Frecuentes -->
         <section>
             <div class="faq">
-        
+
                 <div class="question">
                     <h3>¿Cómo realizo una compra en la tienda online?</h3>
-                    <p>Para comprar, simplemente selecciona el producto que te interesa, agrégalo al carrito y sigue los pasos para finalizar la compra. Puedes elegir entre diferentes métodos de pago, como tarjeta de crédito, débito o transferencias bancarias.</p>
+                    <p>Para comprar, simplemente selecciona el producto que te interesa, agrégalo al carrito y sigue los
+                        pasos para finalizar la compra. Puedes elegir entre diferentes métodos de pago, como tarjeta de
+                        crédito, débito o transferencias bancarias.</p>
                 </div>
-        
+
                 <div class="question">
                     <h3>¿Cuánto cuesta el envío?</h3>
-                    <p>El costo de envío depende de tu ubicación y del tamaño de tu pedido. En el proceso de compra, podrás ver el costo exacto de envío antes de confirmar la compra.</p>
+                    <p>El costo de envío depende de tu ubicación y del tamaño de tu pedido. En el proceso de compra,
+                        podrás ver el costo exacto de envío antes de confirmar la compra.</p>
                 </div>
-        
+
                 <div class="question">
                     <h3>¿Cuánto tarda en llegar mi pedido?</h3>
-                    <p>Generalmente, los pedidos llegan dentro de 3 a 5 días hábiles, dependiendo de tu ubicación. Para pedidos más urgentes, ofrecemos opciones de envío exprés.</p>
+                    <p>Generalmente, los pedidos llegan dentro de 3 a 5 días hábiles, dependiendo de tu ubicación. Para
+                        pedidos más urgentes, ofrecemos opciones de envío exprés.</p>
                 </div>
-        
+
                 <div class="question">
                     <h3>¿Cómo puedo devolver o cambiar un producto?</h3>
-                    <p>Si el producto está en buen estado pero no es lo que esperabas, puedes devolverlo en un plazo de 15 días después de la compra. Consulta nuestra política de devoluciones para obtener más detalles.</p>
+                    <p>Si el producto está en buen estado pero no es lo que esperabas, puedes devolverlo en un plazo de
+                        15 días después de la compra. Consulta nuestra política de devoluciones para obtener más
+                        detalles.</p>
                 </div>
-        
+
                 <div class="question">
                     <h3>¿Ofrecen facturas electrónicas?</h3>
-                    <p>Sí, todas nuestras compras incluyen una factura electrónica que será enviada al correo que proporcionaste al momento de la compra.</p>
+                    <p>Sí, todas nuestras compras incluyen una factura electrónica que será enviada al correo que
+                        proporcionaste al momento de la compra.</p>
                 </div>
-        
+
                 <div class="question">
                     <h3>¿Puedo comprar productos que no están disponibles en el momento?</h3>
-                    <p>Si un producto está agotado, podes activar las notificaciones. Te avisaremos por correo cuando esté disponible nuevamente.</p>
+                    <p>Si un producto está agotado, podes activar las notificaciones. Te avisaremos por correo cuando
+                        esté disponible nuevamente.</p>
                 </div>
-        
+
                 <div class="question">
                     <h3>¿Puedo comprar en la tienda y retirar el producto en el local?</h3>
-                    <p>Sí, ofrecemos la opción de "Recoger en tienda". Solo tienes que seleccionar esta opción durante el proceso de compra y te avisaremos cuando el producto esté listo para ser retirado.</p>
+                    <p>Sí, ofrecemos la opción de "Recoger en tienda". Solo tienes que seleccionar esta opción durante
+                        el proceso de compra y te avisaremos cuando el producto esté listo para ser retirado.</p>
                 </div>
-        
+
                 <div class="question">
                     <h3>¿Cómo contacto con el servicio de atención al cliente?</h3>
-                    <p>Puedes contactarnos a través del correo electrónico <a class="mail" href="mailto:impresiones@lagraficaensenada.com">impresiones@lagraficaensenada.com</a> o utilizando nuestro formulario de contacto en la página de "Atención al Cliente".</p>
+                    <p>Puedes contactarnos a través del correo electrónico <a class="mail"
+                            href="mailto:impresiones@lagraficaensenada.com">impresiones@lagraficaensenada.com</a> o
+                        utilizando nuestro formulario de contacto en la página de "Atención al Cliente".</p>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
 
+        <!-- Copy & links -->
         <div class="container-fluid bg-dark text-center py-3">
             <p>&copy; 2025 La Grafica. Todos los derechos reservados.</p>
-            <a href="https://api.whatsapp.com/send/?phone=542216837843&text&type=phone_number&app_absent=0" target="_blank">Whatsapp</a> | <a href="mailto:impresiones@lagraficaensenada.com">Correo</a>
+            <a href="https://api.whatsapp.com/send/?phone=542216837843&text&type=phone_number&app_absent=0"
+                target="_blank">Whatsapp</a> | <a href="mailto:impresiones@lagraficaensenada.com">Correo</a>
 
         </div>
     </footer>
