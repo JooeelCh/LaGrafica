@@ -47,10 +47,13 @@ header {
 /* Contenido principal */
 main {
     background-color: #f4e5cc;
+    padding-bottom: 2rem;
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .titulo {
