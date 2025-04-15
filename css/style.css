@@ -325,6 +325,14 @@ footer a:hover{
         padding: 8px 16px;
     }
 
+    .terminos-container{
+        gap: 5px;
+    }
+    
+    .terminos-container label{
+        font-size: 14px;
+    }
+
     footer p,
     footer a{
         font-size: 0.9rem;
