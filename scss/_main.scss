@@ -1,6 +1,8 @@
+@import 'variables';
+
 /* Contenido principal */
 main {
-    background-color: #f4e5cc;
+    background-color: $color-primario;
     padding-bottom: 2rem;
     display: flex;
     flex: 1;
@@ -10,6 +12,7 @@ main {
     padding: 20px;
 
     .titulo {
+        color: $titulo;
         text-align: center;
         margin-top: 2rem;
     }
@@ -24,7 +27,7 @@ main {
         padding: 2rem;
 
         .producto {
-            background: white;
+            background: #ffffff;
             padding: 1rem;
             border-radius: 10px;
             text-align: center;
@@ -54,14 +57,14 @@ main {
 
             p {
                 font-size: 1rem;
-                color: #333333;
+                color: $p-primario;
                 margin-bottom: 0.5rem;
             }
             
             button {
                 margin-top: auto;
                 padding: 0.5rem 1rem;
-                background-color: #0d6efd;
+                background-color: $btn-color;
                 border: none;
                 color: #ffffff;
                 border-radius: 5px;
@@ -69,7 +72,7 @@ main {
                 transition: background-color 0.2s ease;
 
                 &:hover {
-                    background-color: #0b5ed7;
+                    background-color: $btn-hover;
                 }
             }
         }
@@ -99,12 +102,17 @@ main {
 
             p {
                 font-size: 0.9rem;
-                color: #555;
+                color: $p-primario;
                 margin-bottom: 0;
 
                 a {
-                    color: #4da6ff;
+                    font-weight: bold;
+                    color: $btn-color;
                     text-decoration: none;
+
+                    &:hover {
+                        color: $btn-hover;
+                    }
                 }
                 
             }
@@ -135,29 +143,29 @@ main {
                 width: 100%;
                 padding: 10px;
                 font-size: 16px;
-                border: 1px solid #ccc;
+                border: 1px solid #cccccc;
                 border-radius: 5px;
-                background-color: white;
+                background-color: #ffffff;
             }
 
             textarea {
                 resize: vertical;
             }
+        }
 
-            .submit-btn {
-                width: 100%;
-                padding: 12px;
-                font-size: 16px;
-                background-color: #0d6efd;
-                color: white;
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-                transition: background-color 0.3s;
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            background-color: $btn-color;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
 
-                &:hover {
-                    background-color: #0b5ed7;
-                }
+            &:hover {
+                background-color: $btn-hover;
             }
         }
     }
@@ -182,14 +190,14 @@ main {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 1px solid #cccccc;
             border-radius: 6px;
         }
 
         .registro {
             width: 100%;
             padding: 10px;
-            background-color: #0d6efd;
+            background-color: $btn-color;
             color: white;
             border: none;
             border-radius: 6px;
@@ -198,7 +206,7 @@ main {
             transition: background-color 0.3s ease;
 
             &:hover {
-                background-color: #0b5ed7;
+                background-color: $btn-hover;
             }
         }
     }

@@ -1,9 +1,11 @@
+@import 'variables';
+
 /* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333333;
+    background-color: $color-secundario;
 
     #logo {
         transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -14,12 +16,12 @@ header {
     }
 
     .nav-link {
-        color: #4da6ff;
+        color: $a-color;
         display: inline-block;
         transition: transform 0.3s ease;
 
         &:hover {
-            color: #ffffff;
+            color: $a-hover;
             transform: scale(1.1);
         }
     }
@@ -27,7 +29,7 @@ header {
     #register {
         p {
             a {
-                color: #4da6ff;
+                color: $a-color;
                 text-decoration: none;
             }
         }

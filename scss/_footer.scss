@@ -1,16 +1,18 @@
+@import 'variables';
+
 /* Footer */
 footer {
-    background-color: #333333;
-    color: #ffffff;
+    background-color: $color-secundario;
+    color: $p-secundario;
 
     a {
-        color: #4da6ff;
+        color: $a-color;
         text-decoration: none;
         display: inline-block;
         transition: transform 0.3s ease;
 
         &:hover {
-            color: #ffffff;
+            color: $a-hover;
             transform: scale(1.1);
         }
     }

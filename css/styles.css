@@ -41,6 +41,7 @@ main {
   /* Formulario de registro */
 }
 main .titulo {
+  color: #000000;
   text-align: center;
   margin-top: 2rem;
 }
@@ -53,7 +54,7 @@ main .catalogo {
   padding: 2rem;
 }
 main .catalogo .producto {
-  background: white;
+  background: #ffffff;
   padding: 1rem;
   border-radius: 10px;
   text-align: center;
@@ -118,12 +119,16 @@ main .faq .question h3 {
 }
 main .faq .question p {
   font-size: 0.9rem;
-  color: #555;
+  color: #333333;
   margin-bottom: 0;
 }
 main .faq .question p a {
-  color: #4da6ff;
+  font-weight: bold;
+  color: #0d6efd;
   text-decoration: none;
+}
+main .faq .question p a:hover {
+  color: #0b5ed7;
 }
 main .form_cnt {
   width: 100%;
@@ -147,25 +152,25 @@ main .form_cnt .form_item input, main .form_cnt .form_item textarea, main .form_
   width: 100%;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 5px;
-  background-color: white;
+  background-color: #ffffff;
 }
 main .form_cnt .form_item textarea {
   resize: vertical;
 }
-main .form_cnt .form_item .submit-btn {
+main .form_cnt .submit-btn {
   width: 100%;
   padding: 12px;
   font-size: 16px;
   background-color: #0d6efd;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-main .form_cnt .form_item .submit-btn:hover {
+main .form_cnt .submit-btn:hover {
   background-color: #0b5ed7;
 }
 main .form-registro {
@@ -184,7 +189,7 @@ main .form-registro input[type=text], main .form-registro input[type=email], mai
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   border-radius: 6px;
 }
 main .form-registro .registro {
