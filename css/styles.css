@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Header */
 header {
   display: flex;
@@ -39,6 +40,7 @@ main {
   /* Preguntas frecuentes */
   /* Contacto */
   /* Formulario de registro */
+  /* Términos y condiciones */
 }
 main .titulo {
   color: #000000;
@@ -205,6 +207,28 @@ main .form-registro .registro {
 }
 main .form-registro .registro:hover {
   background-color: #0b5ed7;
+}
+main .terms {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+main .terms .t-item {
+  margin-bottom: 30px;
+}
+main .terms .t-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 5px;
+}
+main .terms .t-item p {
+  font-size: 1rem;
+  text-align: justify;
 }
 
 /* Footer */
