@@ -4,7 +4,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333333;
+  background-color: #212121;
 }
 header #logo {
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -28,7 +28,7 @@ header #register p a {
 
 /* Contenido principal */
 main {
-  background-color: #f4e5cc;
+  background-color: #eeeeee;
   padding-bottom: 2rem;
   display: flex;
   flex: 1;
@@ -37,6 +37,9 @@ main {
   text-align: center;
   padding: 20px;
   /* Carrusel */
+  /* Productos destacados */
+  /* Impresiones */
+  /* Beneficios */
 }
 main .titulo {
   color: #000000;
@@ -49,11 +52,94 @@ main #carouselExampleAutoplaying {
   height: auto;
   overflow: hidden;
   border-radius: 30px;
-  border: 3px solid #333333;
+  border: 3px solid #212121;
 }
 main #carouselExampleAutoplaying .carousel-inner .carousel-item img {
   height: 100%;
   width: 100%;
+}
+main .card {
+  border: 1px solid #212121;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+main .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+main .card img {
+  max-height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+main .impresiones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .impresiones img {
+  width: 100%;
+  height: auto;
+  height: auto;
+  border: 3px solid #212121;
+  border-radius: 30px;
+}
+main .impresiones .btn {
+  display: flex;
+  align-self: center;
+  background-color: #0d6efd;
+  border: none;
+  width: fit-content;
+  margin: 10px 0 40px 0;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main .impresiones .btn a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+main .impresiones .btn:hover {
+  background-color: #0b5ed7;
+  transition: background-color 0.3s ease;
+  transition: transform 0.5s ease;
+  transform: scale(1.05);
+}
+main .beneficios {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+}
+main .beneficios .item-beneficio {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  gap: 0 1rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+}
+main .beneficios .item-beneficio img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+main .beneficios .item-beneficio h3 {
+  color: #000000;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+main .beneficios .item-beneficio p {
+  color: #333333;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Catalogo */
@@ -68,10 +154,10 @@ main #carouselExampleAutoplaying .carousel-inner .carousel-item img {
 .catalogo .producto {
   background: #ffffff;
   padding: 1rem;
+  border: 1px solid #212121;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -80,6 +166,7 @@ main #carouselExampleAutoplaying .carousel-inner .carousel-item img {
 }
 .catalogo .producto:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .catalogo .producto img {
   max-height: 180px;
@@ -216,7 +303,7 @@ main #carouselExampleAutoplaying .carousel-inner .carousel-item img {
   width: 100%;
   padding: 10px;
   background-color: #0d6efd;
-  color: #333333;
+  color: #212121;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -253,7 +340,7 @@ main #carouselExampleAutoplaying .carousel-inner .carousel-item img {
 
 /* Footer */
 footer {
-  background-color: #333333;
+  background-color: #212121;
   color: #ffffff;
 }
 footer a {
@@ -314,6 +401,11 @@ html body {
     width: 100%;
     height: 300px;
   }
+  .beneficios {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+  }
   .terminos-container {
     gap: 5px;
   }
@@ -353,6 +445,11 @@ html body {
   #carouselExampleAutoplaying {
     width: 100%;
     height: 300px;
+  }
+  .beneficios {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
   }
   .terminos-container {
     gap: 5px;
