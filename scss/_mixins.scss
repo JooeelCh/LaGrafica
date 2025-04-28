@@ -1,6 +1,6 @@
 @import 'variables';
 
-// Mixinx Media Queries
+// Mixins Media Queries
 @mixin media-query($breakpoint) {
     @media (max-width: $breakpoint) {
         .logo {
