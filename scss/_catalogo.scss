@@ -1,0 +1,60 @@
+/* Catalogo */
+.catalogo {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+
+    .producto {
+        background: $container-principal;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            max-height: 180px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $p-primario;
+            margin-bottom: 0.5rem;
+        }
+        
+        button {
+            margin-top: auto;
+            padding: 0.5rem 1rem;
+            background-color: $btn-color;
+            border: none;
+            color: $texto-secundario;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: $btn-hover;
+            }
+        }
+    }
+}

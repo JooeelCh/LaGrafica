@@ -1,0 +1,39 @@
+/* Preguntas frecuentes */
+.faq {
+max-width: 800px;
+margin: 30px auto;
+padding: 20px;
+background-color: $container-principal;
+border-radius: 8px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    .question {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: $container-secundario;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        h3 {
+            font-size: 1.1rem;
+            color: $texto-primario;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: $p-primario;
+            margin-bottom: 0;
+
+            a {
+                font-weight: bold;
+                color: $btn-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $btn-hover;
+                }
+            }
+        }
+    }
+}

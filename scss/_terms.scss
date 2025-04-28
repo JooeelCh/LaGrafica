@@ -1,0 +1,26 @@
+/* Términos y condiciones */
+.terms {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $container-principal;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    
+    .t-item {
+        margin-bottom: 30px;
+    
+        h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: $texto-primario;
+        border-bottom: 2px solid #dee2e6;
+        padding-bottom: 5px;
+        }
+    
+        p {
+        font-size: 1rem;
+        text-align: justify;
+        }
+    }
+    }

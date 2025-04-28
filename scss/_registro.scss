@@ -1,0 +1,38 @@
+/* Formulario de registro */
+.form-registro {
+    max-width: 600px;
+    padding: 30px 40px;
+    background: $container-principal;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    label {
+        margin-top: 15px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #cccccc;
+        border-radius: 6px;
+    }
+
+    .registro {
+        width: 100%;
+        padding: 10px;
+        background-color: $btn-color;
+        color: $color-secundario;
+        border: none;
+        border-radius: 6px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $btn-hover;
+        }
+    }
+}

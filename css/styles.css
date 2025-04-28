@@ -26,28 +26,8 @@ header #register p a {
   text-decoration: none;
 }
 
-/* Contenido principal */
-main {
-  background-color: #f4e5cc;
-  padding-bottom: 2rem;
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  /* Catalogo */
-  /* Preguntas frecuentes */
-  /* Contacto */
-  /* Formulario de registro */
-  /* Términos y condiciones */
-}
-main .titulo {
-  color: #000000;
-  text-align: center;
-  margin-top: 2rem;
-}
-main .catalogo {
+/* Catalogo */
+.catalogo {
   width: 100%;
   max-width: 1200px;
   display: grid;
@@ -55,7 +35,7 @@ main .catalogo {
   gap: 2rem;
   padding: 2rem;
 }
-main .catalogo .producto {
+.catalogo .producto {
   background: #ffffff;
   padding: 1rem;
   border-radius: 10px;
@@ -68,25 +48,25 @@ main .catalogo .producto {
   justify-content: space-between;
   height: 100%;
 }
-main .catalogo .producto:hover {
+.catalogo .producto:hover {
   transform: scale(1.05);
 }
-main .catalogo .producto img {
+.catalogo .producto img {
   max-height: 180px;
   object-fit: contain;
   margin-bottom: 1rem;
   flex-shrink: 0;
 }
-main .catalogo .producto h2 {
+.catalogo .producto h2 {
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
-main .catalogo .producto p {
+.catalogo .producto p {
   font-size: 1rem;
   color: #333333;
   margin-bottom: 0.5rem;
 }
-main .catalogo .producto button {
+.catalogo .producto button {
   margin-top: auto;
   padding: 0.5rem 1rem;
   background-color: #0d6efd;
@@ -96,10 +76,12 @@ main .catalogo .producto button {
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
-main .catalogo .producto button:hover {
+.catalogo .producto button:hover {
   background-color: #0b5ed7;
 }
-main .faq {
+
+/* Preguntas frecuentes */
+.faq {
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
@@ -107,50 +89,52 @@ main .faq {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-main .faq .question {
+.faq .question {
   margin-bottom: 15px;
   padding: 10px;
   background-color: #fafafa;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-main .faq .question h3 {
+.faq .question h3 {
   font-size: 1.1rem;
-  color: #007bff;
+  color: #000000;
   margin-bottom: 10px;
 }
-main .faq .question p {
+.faq .question p {
   font-size: 0.9rem;
   color: #333333;
   margin-bottom: 0;
 }
-main .faq .question p a {
+.faq .question p a {
   font-weight: bold;
   color: #0d6efd;
   text-decoration: none;
 }
-main .faq .question p a:hover {
+.faq .question p a:hover {
   color: #0b5ed7;
 }
-main .form_cnt {
+
+/* Contacto */
+.form_cnt {
   width: 100%;
   max-width: 600px;
   margin: 0 auto 60px;
   padding: 20px;
-  background-color: #f8f9fa;
+  background-color: #fafafa;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-main .form_cnt .form_item {
+.form_cnt .form_item {
   margin-bottom: 15px;
 }
-main .form_cnt .form_item label {
+.form_cnt .form_item label {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 5px;
   display: block;
 }
-main .form_cnt .form_item input, main .form_cnt .form_item textarea, main .form_cnt .form_item select {
+.form_cnt .form_item input, .form_cnt .form_item textarea, .form_cnt .form_item select {
   width: 100%;
   padding: 10px;
   font-size: 16px;
@@ -158,10 +142,10 @@ main .form_cnt .form_item input, main .form_cnt .form_item textarea, main .form_
   border-radius: 5px;
   background-color: #ffffff;
 }
-main .form_cnt .form_item textarea {
+.form_cnt .form_item textarea {
   resize: vertical;
 }
-main .form_cnt .submit-btn {
+.form_cnt .submit-btn {
   width: 100%;
   padding: 12px;
   font-size: 16px;
@@ -172,43 +156,47 @@ main .form_cnt .submit-btn {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-main .form_cnt .submit-btn:hover {
+.form_cnt .submit-btn:hover {
   background-color: #0b5ed7;
 }
-main .form-registro {
+
+/* Formulario de registro */
+.form-registro {
   max-width: 600px;
   padding: 30px 40px;
   background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-main .form-registro label {
+.form-registro label {
   margin-top: 15px;
   margin-bottom: 5px;
   font-weight: bold;
 }
-main .form-registro input[type=text], main .form-registro input[type=email], main .form-registro input[type=password] {
+.form-registro input[type=text], .form-registro input[type=email], .form-registro input[type=password] {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #cccccc;
   border-radius: 6px;
 }
-main .form-registro .registro {
+.form-registro .registro {
   width: 100%;
   padding: 10px;
   background-color: #0d6efd;
-  color: white;
+  color: #333333;
   border: none;
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-main .form-registro .registro:hover {
+.form-registro .registro:hover {
   background-color: #0b5ed7;
 }
-main .terms {
+
+/* Términos y condiciones */
+.terms {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
@@ -216,19 +204,36 @@ main .terms {
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
-main .terms .t-item {
+.terms .t-item {
   margin-bottom: 30px;
 }
-main .terms .t-item h3 {
+.terms .t-item h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #000000;
   border-bottom: 2px solid #dee2e6;
   padding-bottom: 5px;
 }
-main .terms .t-item p {
+.terms .t-item p {
   font-size: 1rem;
   text-align: justify;
+}
+
+/* Contenido principal */
+main {
+  background-color: #f4e5cc;
+  padding-bottom: 2rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+main .titulo {
+  color: #000000;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 /* Footer */
