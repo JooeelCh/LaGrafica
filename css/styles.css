@@ -36,6 +36,7 @@ main {
   align-items: center;
   text-align: center;
   padding: 20px;
+  /* Carrusel */
 }
 main .titulo {
   color: #000000;
@@ -266,6 +267,9 @@ footer a:hover {
   transform: scale(1.1);
 }
 
+/* Mixins */
+/* Media query tablet */
+/* Media query celular */
 /* Reset de estilos */
 * {
   margin: 0;

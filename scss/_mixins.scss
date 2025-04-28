@@ -1,6 +1,7 @@
 @import 'variables';
 
-// Mixins Media Queries
+/* Mixins */
+/* Media query tablet */
 @mixin media-query($breakpoint) {
     @media (max-width: $breakpoint) {
         .logo {
@@ -24,6 +25,7 @@
     }
 }
 
+/* Media query celular */
 @mixin media-query($breakpoint) {
     @media (max-width: $breakpoint){
         .logo {
