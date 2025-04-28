@@ -36,17 +36,15 @@ main {
   align-items: center;
   text-align: center;
   padding: 20px;
-  /* Carrusel */
-  /* Productos destacados */
-  /* Impresiones */
-  /* Beneficios */
 }
 main .titulo {
   color: #000000;
   text-align: center;
   margin-top: 2rem;
 }
-main #carouselExampleAutoplaying {
+
+/* Carrusel */
+#carouselExampleAutoplaying {
   width: 100%;
   max-width: 1400px;
   height: auto;
@@ -54,38 +52,42 @@ main #carouselExampleAutoplaying {
   border-radius: 30px;
   border: 3px solid #212121;
 }
-main #carouselExampleAutoplaying .carousel-inner .carousel-item img {
+#carouselExampleAutoplaying .carousel-inner .carousel-item img {
   height: 100%;
   width: 100%;
 }
-main .card {
+
+/* Productos destacados */
+.card {
   border: 1px solid #212121;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-main .card:hover {
+.card:hover {
   transform: scale(1.01);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-main .card img {
+.card img {
   max-height: 180px;
   object-fit: contain;
   margin-bottom: 1rem;
   flex-shrink: 0;
 }
-main .impresiones {
+
+/* Impresiones */
+.impresiones {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main .impresiones img {
+.impresiones img {
   width: 100%;
   height: auto;
   height: auto;
   border: 3px solid #212121;
   border-radius: 30px;
 }
-main .impresiones .btn {
+.impresiones .btn {
   display: flex;
   align-self: center;
   background-color: #0d6efd;
@@ -96,25 +98,27 @@ main .impresiones .btn {
   border-radius: 5px;
   cursor: pointer;
 }
-main .impresiones .btn a {
+.impresiones .btn a {
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2rem;
 }
-main .impresiones .btn:hover {
+.impresiones .btn:hover {
   background-color: #0b5ed7;
   transition: background-color 0.3s ease;
   transition: transform 0.5s ease;
   transform: scale(1.05);
 }
-main .beneficios {
+
+/* Beneficios */
+.beneficios {
   display: flex;
   justify-content: space-evenly;
   background-color: #ffffff;
   width: 100%;
   height: auto;
 }
-main .beneficios .item-beneficio {
+.beneficios .item-beneficio {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -126,17 +130,17 @@ main .beneficios .item-beneficio {
   max-width: 300px;
   border-radius: 10px;
 }
-main .beneficios .item-beneficio img {
+.beneficios .item-beneficio img {
   width: 60px;
   height: auto;
   margin-bottom: 1rem;
 }
-main .beneficios .item-beneficio h3 {
+.beneficios .item-beneficio h3 {
   color: #000000;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
-main .beneficios .item-beneficio p {
+.beneficios .item-beneficio p {
   color: #333333;
   font-size: 1rem;
   margin-bottom: 0.5rem;
